@@ -27,25 +27,32 @@ body {
 }
 
 .resume {
-  width: 800px;
-  height: auto;
+  width: 900px;
+  max-height: auto;
   display: flex;
   margin: 50px auto;
+  overflow-y: hidden;
 }
 
 .resume .resume_left {
-  width: 280px;
-  background: #0bb5f4;
+  width: 300px;
+  background: brown;
 }
 
 .resume .resume_left .resume_profile {
-  width: 100%;
+  width: 95%;
   height: 280px;
+}
+
+.resume .resume_left .resume_profile img {
+  border-radius: 100%;
 }
 
 .resume .resume_left .resume_profile img {
   width: 100%;
   height: 100%;
+  margin: 0 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .resume .resume_left .resume_content {
@@ -71,12 +78,12 @@ body {
 }
 
 .resume .resume_left .regular {
-  color: #b1eaff;
+  color: brown;
 }
 
 .resume .resume_item {
   padding: 25px 0;
-  border-bottom: 2px solid #b1eaff;
+  border-bottom: 2px solid brown;
 }
 
 .resume .resume_left .resume_item:last-child,
@@ -98,7 +105,7 @@ body {
   width: 35px;
   height: 35px;
   background: #fff;
-  color: #0bb5f4;
+  color:brown;
   border-radius: 50%;
   margin-right: 15px;
   font-size: 16px;
@@ -133,7 +140,7 @@ body {
   width: 60%;
   margin: 0 5px;
   height: 5px;
-  background: #009fd9;
+  background: aqua;
   position: relative;
 }
 
@@ -161,7 +168,7 @@ body {
 }
 
 .resume .resume_right .bold {
-  color: #0bb5f4;
+  color: brown;
 }
 
 .resume .resume_right .resume_work ul,
@@ -197,18 +204,19 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  border: 2px solid #0bb5f4;
+  border: 2px solid brown;
 }
 
 .resume .resume_right .resume_work ul li:after,
 .resume .resume_right .resume_education ul li:after {
   content: "";
   position: absolute;
-  top: 14px;
-  left: -21px;
-  width: 2px;
-  height: 115px;
-  background: #0bb5f4;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid brown;
 }
 
 .resume .resume_right .resume_hobby ul {
@@ -248,4 +256,26 @@ body {
   width: 50%;
   border: 1px #009fd9;
   border-radius: 10%;
+}
+
+@media (max-width: 1000px) {
+  .resume {
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .py-1 {
+    grid-template-columns: repeat(1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .resume {
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .py-1 {
+    grid-template-columns: repeat(1fr);
+  }
 }
