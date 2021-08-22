@@ -499,5 +499,6 @@ body {
 
   .Faint {
     color: blueviolet;
+    font-weight: 800;
   }
 }
