@@ -501,4 +501,13 @@ body {
     color: blueviolet;
     font-weight: 800;
   }
+
+  .semi-bold {
+    color: #fff;
+  }
+
+  .data p a {
+    text-decoration: none;
+    color: cornflowerblue;
+  }
 }
